@@ -17,8 +17,11 @@ Variables
   --clr-primary-2: hsl(205, 77%, 27%);
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
+
+
   /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
+  /* --clr-primary-5: hsl(205, 78%, 60%); */
+  --clr-primary-5:  #FF6600;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -68,8 +71,8 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  background: var(--clr-grey-1);
+  color: var(--clr-grey-10);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -90,7 +93,7 @@ h4 {
   font-family: var(--ff-primary);
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 h2 {
   font-size: 2rem;
@@ -106,9 +109,6 @@ p {
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
   h2 {
     font-size: 2.5rem;
   }
@@ -232,6 +232,9 @@ main {
 #author {
   margin-bottom: 0.25rem;
 }
+#author{
+  color: var(--clr-grey-1)
+}
 #job {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -261,12 +264,13 @@ main {
   color: var(--clr-primary-5);
   padding: 0.25rem 0.5rem;
   text-transform: capitalize;
-  border-radius: var(--radius);
+  border: #FF6600 solid 0.1rem;
+  border-radius: 0.5rem;
   transition: var(--transition);
   border-color: var(--clr-primary-5);
   cursor: pointer;
 }
 .random-btn:hover {
   background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
+  color: var(--clr-white);
 }
